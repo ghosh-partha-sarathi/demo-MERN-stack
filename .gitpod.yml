@@ -7,7 +7,7 @@ tasks:
       npm i bootstrap
       npm i css-loader style-loader
       npm i express
-      npm i redux
+      npm i redux react-redux
       npm i @babel/core @babel/node @babel/preset-env @babel/preset-react babel-loader
       npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-react-hooks
     command: |
