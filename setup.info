@@ -1,0 +1,11 @@
+# configure server start commands in package.json
+Add below scripts block to package.json file IF NOT ALREADY ADDED
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --open",
+    "build": "webpack --config webpack.config.js --mode=development"
+  }
+
+# run below commands from two different terminals in parallel
+  npm start
+  npm run build
