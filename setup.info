@@ -7,5 +7,5 @@ Add below scripts block to package.json file IF NOT ALREADY ADDED
   }
 
 # run below commands from two different terminals in parallel
-  npm start
+  npm run start
   npm run build
