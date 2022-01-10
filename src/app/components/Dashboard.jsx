@@ -1,11 +1,19 @@
 import React from "react";
+import { connect } from "react-redux";
 
 export const Dashboard = ({ groups }) => {
   return (
     <div>
       <h2>Dashboard</h2>
+      {groups.map((group) => (
+        <div>{group.name}</div>
+      ))}
     </div>
   );
 };
 
-// export default Dashboard;
+function mapStateToProps(state) {
+  return { groups: state.groups };
+}
+
+export const ConnectedDashboard = connect(mapStateToProps)(Dashboard);
